@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body,
+html {
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 auto;
+    height: 100%;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    height: 30vh;
+    background-image: url("https://i.postimg.cc/wMmc213w/img01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 30%;
+    z-index: -1;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+//Nawigacja
+.navigation {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    background-color: $bgc-main;
+    padding: 12px 0;
+    text-align: right;
+    border-bottom: 1px dashed $color-ME-System;
+    border-top: 1px dashed $color-ME-System;
+    box-shadow: 0px 0px 60px 30px rgba(59, 59, 152, 0.8);
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.navigation ul li a {
+    color: $primary-text-color;
+    font-size: 20px;
+    transition: .2s cubic-bezier(0, 0, 0.17, 1);
+}
+
+.navigation ul li a:hover {
+    border-bottom: 3px solid $color-ME-System;
+}
+
+
+//SEKCJE
+.section-title {
+    position: relative;
+    margin: 50px 0 60px 0;
+    text-align: center;
+    color: $primary-text-color;
+    // font-family : $font-text;
+    // font-weight: light;
+    font-size: 30px;
+}
+
+.section-title:after {
+    position: absolute;
+    display: block;
+    content: '*****';
+    width: 150px;
+    height: 5px;
+    background: $color-ME-System;
+    left: 50%;
+    bottom: -16px;
+    margin-left: -75px;
+}
+
+//O FIRMIE
+
+.about-container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 60vh;
+}
+
+.about-first-img {
+    float: left;
+    margin-right: 15px;
+    width: 45%;
+    border: 1px solid $color-ME-System;
+    padding: 5px;
+    border-radius: 5px;
+    // box-shadow: 10px 10px 15px $color-ME-System;
+}
+
+.about-second-img {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 45%;
+    padding: 5px;
+    border: 1px solid $color-ME-System;
+    border-radius: 5px;
+    // box-shadow: 10px 10px 15px $color-ME-System;
+}
+
+.about-container p {
+    text-align: left;
+    font-size: 18px;
+}
+
+//OFERTA
+
+.features-wrapper {
+    display: flex;
+}
+
+.feature {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    text-align: center;
+    margin: 24px 0 0 0;
+}
+
+.feature i {
+    // background-color: grey;
+    width: 100px;
+    height: 100px;
+    line-height: 95px;
+    border: 3px solid $color-ME-System;
+    border-radius: 25px;
+    font-size: 45px;
+
+}
+
+//CYTATY/OPINIE O FIRMIE
+
+.statement {
+    background-image: url('https://i.postimg.cc/DZjq4bcS/quotes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 140%;
+    background-attachment: fixed;
+    height: 150px;
+}
+
+.statement p {
+    margin: 0;
+    padding: 40px;
+    font-size: 25px;
+    color: $primary-text-color;
+}
+
+.quotes {
+    height: 40vh;
+}
+
+.quote {
+    width: 100%;
+    padding: 0 72px;
+}
+
+.quotes-wrapper {
+    margin: 72px 0 0 0;
+}
+
+.quote blockquote {
+    padding: 0px 36px;
+}
+
+.quote footer {
+    margin: 24px 0 0 0;
+}
+
+//PRZYCISK PRZEWIJANIA OPINII
+
+.flickity-page-dots .dot {
+    background-color: $color-ME-System;
+    width: 15px;
+    height: 15px;
+}
+
+.flickity-button-icon {
+    fill: $color-ME-System;
+}
+
+.flickity-button {
+    background-color: $color-ME-System;
+}
+
+//KONTAKT
+
+.contact {
+    margin-left: 30%;
+    max-width: 40%;
+    border: 5px solid $color-ME-System;
+    border-radius: 25px;
+
+
+}
+
+.contact-text {
+    text-align: center;
+    font-size: 30px;
+}
+
+.contact .container p:last-child {
+    text-align: center;
+    // text-shadow: 2px 2px 3.5px white;
+    font-size: 30px;
+    background-color: #74b9ff;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+}
+
+//STOPKA
+
+.page-footer {
+    background-color: $bgc-main;
+    box-shadow: 0px 0px 60px 30px rgba(59, 59, 152, 0.8);
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.social-links li {
+    display: inline-block;
+    font-size: 30px;
+    width: 60px;
+    height: 40px;
+    margin-top: 7px;
+    text-align: center;
+}
+
+.social-links li a {
+    color: $color-ME-System;
+}
+
+.social-links li a:hover {
+    color: $primary-text-color;
+}
+
+.page-footer .container p {
+    position: absolute;
+    margin: 7px;
+    font-size: 20px;
+}
+
+//Przycisk powrotny do góy strony
+
+#button {
+    display: inline-block;
+    background-color: $color-ME-System;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    display: none;
+    z-index: 1000;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: $primary-text-color;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: $bgc-main;
+}
